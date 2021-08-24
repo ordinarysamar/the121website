@@ -1,0 +1,28 @@
+:root{
+    --bg : #ffffff
+}
+body{
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+.top-bar{
+    background-color: var(--bg);
+    max-width: 100vw;
+    height: 15%;
+}
+.logo{
+    font-family: 'Montserrat', sans-serif;
+    max-width: 50%;
+}
+.quick-links{
+    font-family: 'Montserrat', sans-serif;
+    max-width: 50%;
+}
+.title{
+    font-size: 25px;
+}
+.des{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
