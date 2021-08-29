@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap'); /* importing the Montserrat Font from google fonts */
+@import url( "Header.css" );
 
+* {
+    /* declaration of variables */
+}
 
 html{
     background-color: #242424;
@@ -8,75 +11,6 @@ html{
 body {
     margin: 0;
     padding: 0;
-}
-
-header {
-    top: 0;
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #fff;
-    font-family: 'Montserrat' , sans-serif;
-    width: 100vw;
-}
-
-.logo {
-    margin-right: auto;
-    padding: 5px 10px;
-    padding-left: 2%;
-}
-
-.logo a {
-    text-decoration: none;
-    color: #000;
-}
-
-.title {
-    font-weight: 700;
-    font-size: 25px;
-}
-
-.title::after {
-    position: relative;
-    content: '/';
-    padding-left: 10px;
-    top: 2px;
-}
-
-.subtitle {
-    position: relative;
-    text-transform: uppercase;
-    top: -1px;
-    padding-left: 10px;
-    font-size: 17px;
-    font-weight: 400;
-    letter-spacing: 0.34px;
-    line-height: 20.4px;
-}
-
-.quick-links {
-    padding-right: 4%;
-}
-
-.quick-links li {
-    font-weight: 400;
-    list-style: none;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-left: 30px;
-    font-size: 14px;
-}
-
-
-.quick-links a {
-    color: #000;
-    text-decoration: none;
-    transition: all ease 200ms;
-}
-
-.quick-links a:hover {
-    color: #0050ff;
 }
 
 main {
