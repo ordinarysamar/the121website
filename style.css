@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&display=swap');
 @import url( "Header.css" );
 
 * {
@@ -9,10 +10,51 @@ html{
 }
 
 body {
+    min-height: calc(100vh - 81px);
     margin: 0;
     padding: 0;
 }
 
 main {
-    margin: 80px 50px 0px;
+    margin: 81px 20px 0px 20px; /* making the main portion to ignore the header */
+}
+
+.about-section {
+    position: relative;
+    top: 20px;
+    background-color: whitesmoke;
+} 
+
+.tagline {
+    font-family: 'Overpass Mono' , monospace;
+    display: flex;
+    flex-direction: column;    
+}
+
+.tagline :nth-child(1) {
+    font-size: 70px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.tagline :nth-child(1) em {
+    font-weight: 400;
+    margin: 0;
+}
+
+.tagline :nth-child(2) {
+    font-weight: 700;
+    font-size: 70px;
+    margin-left: 60px;
+}
+
+.tagline :nth-child(3) {
+    font-size: 70px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.tagline p {
+    margin-left: 20px;
+    width: 40%;
 }
