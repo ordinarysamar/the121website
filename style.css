@@ -1,60 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&display=swap');
-@import url( "Header.css" );
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&display=swap'); /* Importing Online fonts */
+@import url( "Header.css" ); /* Importing the Header File for Header styling */
 
 * {
     /* declaration of variables */
+    --titleFontsize : 90px;
+    box-sizing: border-box;
 }
 
-html{
+html {
     background-color: #242424;
 }
 
 body {
     min-height: calc(100vh - 81px);
+
     margin: 0;
     padding: 0;
 }
 
+/* styling the scroll bar of the website */
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(193, 66, 66, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+/* styling the scroll bar of the website */
+
+
 main {
+    z-index: -10;
+
     margin: 81px 20px 0px 20px; /* making the main portion to ignore the header */
 }
 
 .about-section {
+    display: flex;
+
+    width: 100%;
+
     position: relative;
     top: 20px;
+
     background-color: whitesmoke;
 } 
 
 .tagline {
     font-family: 'Overpass Mono' , monospace;
-    display: flex;
-    flex-direction: column;    
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    max-width: 100%;
+    
+    padding: 10px;
+
+    max-height: 100%;
 }
 
-.tagline :nth-child(1) {
-    font-size: 70px;
-    margin-left: 20px;
+.tagline > span {
+    font-size: var(--titleFontsize);
     font-weight: 700;
+
+    margin-left: 20px;
 }
 
-.tagline :nth-child(1) em {
+.tagline :nth-child(2) {
+    margin-left: 60px;
+}
+
+.tagline em {
     font-weight: 400;
     margin: 0;
 }
 
-.tagline :nth-child(2) {
-    font-weight: 700;
-    font-size: 70px;
-    margin-left: 60px;
-}
-
-.tagline :nth-child(3) {
-    font-size: 70px;
-    font-weight: 700;
-    margin-left: 20px;
-}
-
 .tagline p {
+    font-size: 16px;
+    width: 70%;
+    text-align: justify;
     margin-left: 20px;
-    width: 40%;
 }
+
+.showcase {
+    width: 100%;
+    
+    padding: 15px;
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit , minmax(200px , 1fr));
+    grid-auto-rows: 200px;
+    
+}
+
+.showcase div > span {
+    display: none;
+}
+
+.showcase div {
+    background-position: center;
+    
+    border-radius: 10px;
+}
+
+/* Helper Classes for Grids*/
+.wide-element {
+    grid-column: span 2 / auto;
+}
+.tall-element {
+    grid-row: span 2 / auto;
+}
+/*Helper Classes for Grids*/

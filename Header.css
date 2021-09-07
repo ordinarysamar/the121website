@@ -2,6 +2,7 @@
 
 
 header {
+    z-index: 1;
     top: 0;
     position: fixed;
     display: flex;
@@ -12,6 +13,7 @@ header {
     width: 100vw ;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 0px 2px 20px 2px #000;
+    user-select: none;
 }
 
 .logo {
@@ -55,6 +57,7 @@ header {
     padding-right: 4%;
 }
 
+
 .quick-links li {
     font-weight: 400;
     list-style: none;
@@ -63,7 +66,6 @@ header {
     margin-left: 30px;
     font-size: 14px;
 }
-
 
 .quick-links a {
     color: #000;
@@ -78,5 +80,22 @@ header {
 .logo a img {
     width: 82px;
     height: 65px;
+}
+
+
+.button {
+    border: 2px solid #363636;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-left: 30px;
+}
+.button li {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.button:hover , .quick-links :nth-child(5):hover{
+    color: #fff;
+    background-color: #1c1c1c;
 }
 
