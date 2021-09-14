@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap'); /* importing the Montserrat Font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap'); /* importing the Montserrat Font from google fonts */
 
+/* Code for the positioning of the header Item */
 
 header {
     z-index: 1;
@@ -15,6 +16,10 @@ header {
     box-shadow: 0px 2px 20px 2px #000;
     user-select: none;
 }
+
+/* Code for the positioning of the header Item */
+
+/* Code for the title and subtitle beside the Logo*/
 
 .logo {
     margin-right: auto;
@@ -53,6 +58,10 @@ header {
     line-height: 20.4px;
 }
 
+/* Code for the title and subtitle beside the Logo*/
+
+/* Code for navigation bar elements */
+
 .quick-links {
     padding-right: 4%;
 }
@@ -70,18 +79,25 @@ header {
 .quick-links a {
     color: #000;
     text-decoration: none;
-    transition: all ease 200ms;
+    transition: all ease 300ms;
 }
 
 .quick-links a:hover {
     color: #0050ff;
 }
 
+/* Code for navigation bar elements */
+
+/* Code for the Logo Image */
+
 .logo a img {
     width: 82px;
     height: 65px;
 }
 
+/* Code for the Logo Image */
+
+/* Code for the Hire Button */
 
 .button {
     border: 2px solid #363636;
@@ -99,3 +115,4 @@ header {
     background-color: #1c1c1c;
 }
 
+/* Code for the Hire Button */

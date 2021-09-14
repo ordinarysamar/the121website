@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&family=Roboto+Condensed:wght@700&display=swap');
+/* Importing Online fonts */
+
+
+.about-section {
+    display: flex;
+
+    width: 100%;
+
+    position: relative;
+    top: 20px;
+
+    background-color: whitesmoke;
+}
+
+.tagline {
+    font-family: 'Overpass Mono', monospace;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    max-width: 100%;
+
+    padding: 10px;
+
+    max-height: 100%;
+}
+
+.tagline > span {
+    font-size: var(--titleFontsize);
+    font-weight: 700;
+
+    margin-left: 20px;
+}
+
+.tagline :nth-child(2) {
+    margin-left: 60px;
+}
+
+.tagline em {
+    font-weight: 400;
+    margin: 0;
+}
+
+.tagline p {
+    font-size: 16px;
+    text-align: justify;
+    
+    width: 70%;
+    margin-left: 20px;
+    
+}
+
+.showcase {
+    width: 100%;
+
+    padding: 25px;
+
+    background: #C8C6C6;
+
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+
+    transition: all 250ms ease;
+
+}
+
+.element {
+    font-family: 'Roboto Condensed', sans-serif;
+    
+    color: transparent;
+    background-color: rgba(38, 38, 38, 0.6);
+    
+    user-select: none;
+}
+
+.showcase div {
+    background-position: center;
+
+    border-radius: 10px;
+}
+
+/* Showcase Items Hover overlay */
+
+.element a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-transform: uppercase;
+    
+    font-size: 21px;
+    
+    color: white;
+    
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    
+    background-color: rgba(38, 38, 38, 0.6);
+    opacity: 0;
+    
+    transition: all 600ms ease;
+}
+
+/* Showcase Items Hover overlay */
+
+.showcase div:hover > a {
+    opacity: 1; /* Showing the overlay when hovered over */
+}
+
+/* Helper Classes for Grids*/
+
+.wide-element {
+    grid-column: span 2 / auto; /* takes 2 grid column space */
+}
+
+.tall-element {
+    grid-row: span 2 / auto;
+}
+
+/*Helper Classes for Grids*/
+
+/* Vertical Text with showcase */
+
+.vertical-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    
+    text-transform: uppercase;
+    word-spacing: 10px;
+    letter-spacing: 15px;
+    writing-mode: vertical-rl;
+    
+    align-self: center;
+
+}
+
+/* Vertical Text with showcase */
+
+
+.helper-text {
+    background: #C8C6C6;
+    
+    padding: 12px 8px 12px 12px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.a-tag-reset {
+    text-decoration: none;
+}

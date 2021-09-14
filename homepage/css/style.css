@@ -1,0 +1,49 @@
+@import url("heroSection.css");
+@import url("header.css");
+@import url("team.css");
+/* Importing the Header File for Header styling */
+
+
+* {
+    /* declaration of variables */
+    --titleFontsize: 90px;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    background-color: #242424;
+}
+
+body {
+    min-height: calc(100vh - 81px);
+
+    margin: 0;
+    padding: 0;
+}
+
+/* styling the scroll bar of the website */
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(193, 66, 66, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+/* styling the scroll bar of the website */
+
+
+main {
+    z-index: -10;
+
+    margin: 81px 20px 0px 20px;
+    /* making the main portion to ignore the header */
+}
