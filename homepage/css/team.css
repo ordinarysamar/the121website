@@ -1,119 +1,112 @@
 .team {
-    display: flex;
-    flex-wrap: wrap;
-
-    margin-top: 40px;
-
-    background-color: rgba(168, 168, 168, 0.85);
+  display: flex;
 }
 
-.team > div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    background: white;
-    margin: 10px;
-    border-radius: 20px;
-    width: 48.48%;
-    align-items: center;
+.about {
+  font-size: 20px;
+  font-family: "Montserrat", monospace;
 }
 
-.team > div span {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
+.designation {
+  font-size: 30px;
+  font-family: 'Overpass Mono' , monospace;
+}
+
+.team-containers > span{
+  color: white;
+  text-align: justify;
+}
+
+.team-containers {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 .team img {
-    padding: 10%;
-    border-radius: 50px;
-}
-
-.team p {
-    width: 75%;
-    font-family: 'Overpass Mono', monospace;
-    justify-self: start;
-    padding-left: 6%;
+  height: 400px;
+  object-fit: contain;
+  object-position: left;
 }
 
 .intro-text {
-    margin-top: 60px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background: white;
+  margin-top: 60px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: white;
 }
 
 .intro-text span {
-    font-family: 'Montserrat' , sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: capitalize;
 
-    padding: 10px 0px;
+  padding: 10px 0px;
 }
 
 .footer {
-    background-color: #777777;
-    margin-top: 20px;
+  background-color: #777777;
+  margin-top: 20px;
 }
 
 .contact {
-    height: 70px;
-    display: flex;
-    align-items: center;
+  height: 70px;
+  display: flex;
+  align-items: center;
 }
 
 .contact span {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .contact:nth-child(3) {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .contact svg {
-    display: block;
-    height: 100%;
-    width: 40%;
+  display: block;
+  height: 100%;
+  width: 40%;
 }
 
 .follow {
-    display: grid;
-    width: 10%;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px 10px 10px auto;
+  display: grid;
+  width: 10%;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px 10px 10px auto;
 }
 
 .follow span {
-    grid-column: span 3 / auto;
-    margin-bottom: 5px;
-    font-family: 'Montserrat' , sans-serif;
-    font-weight: 500;
+  grid-column: span 3 / auto;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 .contact ion-icon {
-    font-size: 25px;
-    margin-left: 20px;
-    color: black;   
+  font-size: 25px;
+  margin-left: 20px;
+  color: black;
 }
-.call , .mail {
-    display: flex;
-    align-items: center;
+.call,
+.mail {
+  display: flex;
+  align-items: center;
 }
-
-
 
 .hover-text {
-    font-size: 0px;
-    transition: all 500ms ease;
+  font-size: 0px;
+  font-family: "Overpass Mono", monospace;
+  transition: all 350ms ease;
 }
 
-
-.call a:hover + span{
-    font-size: inherit;
+.call a:hover + span {
+  font-size: inherit;
 }
 .mail a:hover + span {
-    font-size: inherit;
+  font-size: inherit;
 }

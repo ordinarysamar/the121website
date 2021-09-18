@@ -1,15 +1,14 @@
 @import url("heroSection.css");
 @import url("header.css");
 @import url("team.css");
+@import url("imports.css");
 /* Importing the Header File for Header styling */
 
 
 * {
-    /* declaration of variables */
     --titleFontsize: 90px;
     box-sizing: border-box;
 }
-
 
 
 html {
